@@ -39,8 +39,8 @@ deal; drugs seized in Libya; Sudan drone toll; Gulf states repel drones.
 
 **Asia-Pacific (8):** India–Canada defence pact; India–Japan 2+2 talks;
 Bangladesh sends in troops; Bangladesh goes nuclear; Cyclone Akvan nears
-India; Kashmir rebel leader killed; Modi meets William and Kate; Xi meets
-Putin first.
+India; Kashmir rebel leader killed; World Court rules on Rohingya case; Xi
+meets Putin first.
 
 **Business &amp; Tech (4):** Anthropic debuts on Nasdaq (up to $1.4tn);
 copper plunges 5%; "spy" held over Palantir; senators warn on AI threats.
@@ -50,7 +50,7 @@ to sea; wine harvest hit by climate; Harry sees a "big separation"; Islam
 to top faith by 2035.
 
 **In brief (5):** Honduras attacks; Kumamoto quake; Earthshot Prize;
-Trump to call Takaichi; US outages.
+Trump to call Takaichi; 1 in 4 children in conflict zones.
 
 All 47 stories happened or were first reported on 19 November 2026. Every
 fact on the page was checked against news reporting from that day; nothing
