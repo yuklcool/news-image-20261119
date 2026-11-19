@@ -29,3 +29,12 @@ if (!copied.equals(original)) {
 if (copied.length > 1048576) {
   throw new Error("entry.png exceeds the 1 MiB limit");
 }
+
+// The gate reads the file by its first bytes: make sure it is a whole
+// PNG or JPEG before handing it over.
+const magic = copied.subarray(0, 4);
+const isPng = magic.equals(Buffer.from([0x89, 0x50, 0x4e, 0x47]));
+const isJpeg = copied[0] === 0xff && copied[1] === 0xd8 && copied[2] === 0xff;
+if (!isPng && !isJpeg) {
+  throw new Error("entry.png is neither PNG nor JPEG");
+}
