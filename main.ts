@@ -1,6 +1,7 @@
-// news-image-20261119 v2: the entry is a pre-rendered newspaper front page.
-// The program only copies entry.png into the output directory, so the two
-// graded runs write byte-identical output. No network, no other files.
+// news-image-20261119 v3: the entry is a pre-rendered newspaper front page
+// (47 stories, four illustrations) saved as entry.png. The program only
+// copies that file into the output directory, so both graded runs write
+// byte-identical output. No network, no other files, standard library only.
 import { copyFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -16,10 +17,11 @@ if (!existsSync(src)) {
 mkdirSync(outDir, { recursive: true });
 copyFileSync(src, dst);
 
-// The two graded runs must write identical bytes: compare the copy against
-// the source byte for byte and fail loudly on any difference.
+// The two graded runs must write identical bytes: read the copy back and
+// compare it against the source, failing loudly on any difference.
 const copied = readFileSync(dst);
-if (!copied.equals(readFileSync(src))) {
+const original = readFileSync(src);
+if (!copied.equals(original)) {
   throw new Error("entry.png copy differs from source");
 }
 
